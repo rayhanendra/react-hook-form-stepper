@@ -1,24 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Paper } from '@mui/material';
+import { Container } from '@mui/system';
+import FormRegistration from './components/organisms/FormRegistration';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Container maxWidth='xs' sx={{ p: 0 }}>
+        <Paper sx={{ height: '100vh' }}>
+          <FormRegistration />
+        </Paper>
+      </Container>
     </div>
   );
 }
